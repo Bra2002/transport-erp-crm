@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة التحكم</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>🚚 لوحة التحكم</div>
+    <nav>
+      <a href="dashboard.html">الشحنات</a>
+      <a href="clients.html">العملاء</a>
+      <a href="vehicles.html">المركبات</a>
+      <a href="index.html" onclick="localStorage.removeItem('token')">خروج</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>الشحنات</h2>
+      <div class="actions">
+        <button id="btnAdd">+ شحنة جديدة</button>
+      </div>
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>مرجع</th><th>العميل</th><th>من</th><th>إلى</th><th>الحالة</th><th>المركبة</th><th>إجراءات</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <div id="modal" class="modal hidden"></div>
+  <script src="./assets/js/common.js"></script>
+  <script src="./assets/js/shipments.js"></script>
+</body>
+</html>

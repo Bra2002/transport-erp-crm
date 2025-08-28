@@ -1,0 +1,12 @@
+*{box-sizing:border-box}body{font-family:system-ui,Arial,sans-serif;background:#f6f8fb;margin:0;color:#222}
+.container{max-width:420px;margin:10vh auto;background:#fff;padding:24px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+h1,h2{margin:0 0 16px}label{display:block;margin:8px 0 4px}input,select{width:100%;padding:10px;border:1px solid #ddd;border-radius:10px}
+button{padding:10px 16px;border:0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);cursor:pointer}
+button:active{transform:translateY(1px)}.hint{font-size:12px;color:#666;margin-top:8px}
+.topbar{display:flex;justify-content:space-between;align-items:center;background:#213242;color:#fff;padding:12px 16px}
+.topbar nav a{color:#fff;text-decoration:none;margin:0 8px}.actions{margin:12px 0}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+th,td{padding:10px;border-bottom:1px solid #eee}th{text-align:right;background:#f0f4f8}.modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center}
+.modal>div{background:#fff;padding:16px;border-radius:14px;min-width:300px}.hidden{display:none}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}}
